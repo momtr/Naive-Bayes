@@ -1,4 +1,5 @@
 # Naive-Bayes
+> Classifier
 
 ## Output
 The points in the figures below belong to different classes. The colored space is the prediction of the Naive Bayes model using the points as training data.
