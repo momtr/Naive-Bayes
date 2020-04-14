@@ -132,4 +132,25 @@ class NaiveBayesClassifier {
         return ret;
     }
 
+    /**
+     * returns the score of the model (0 <= score <= 1)
+     * @param {array} data - data array of data objects
+     * [ {x: [..], y: .. }, .., {..} ]
+     */
+    score(data) {
+        let n = data.length; 
+        let right = 0;
+        for(let i of data) {
+            let featureObj = {};
+            for(let f = 0; f < i.x.length; f++) {
+                let feature = this.features[f];
+                featureObj[feature] = i.x[f];
+            }
+            let prediction = this.predict(featureObj)[0].class
+            if(prediction == i.y)
+                right++;
+        }
+        return right / n;
+    }
+
 }
