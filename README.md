@@ -11,8 +11,7 @@ The points in the figures below belong to different classes. The colored space i
 ## How does it work?
 Naive Bayes is an algorithm using Bayes' Theorem (see https://en.wikipedia.org/wiki/Bayes%27_theorem).
 <br>
-It is based on the following formula(s) for 
-pabilities:
+It is based on the following formula(s) for probabilities:
 
 ```
 P .. probability
