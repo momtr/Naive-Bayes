@@ -11,10 +11,11 @@ The points in the figures below belong to different classes. The colored space i
 ## How does it work?
 Naive Bayes is an algorithm using Bayes' Theorem (see https://en.wikipedia.org/wiki/Bayes%27_theorem).
 <br>
-It is based on the following formula(s) for propabilities:
+It is based on the following formula(s) for 
+pabilities:
 
 ```
-P .. propability
+P .. probability
 
 P(A and B) = P(A) * P(A|B)
 P(B and A) = P(B) * P(B|A)
@@ -31,13 +32,13 @@ B = { class1, class2 }
 
 ```
 
-Note, that the propability for a list of features is:
+Note, that the probability for a list of features is:
 
 ```
 P(f1=value1, f2=value2) = P(f1=value1) * P(f2=value2)
 ```
 
-Now, having the formula, we can just calculate the propabilities for a list of features being part of a certain class :)
+Now, having the formula, we can just calculate the probabilities for a list of features being part of a certain class :)
 
 ```
 P(class) ... number of all training examples / number of training examples belonging to that class
